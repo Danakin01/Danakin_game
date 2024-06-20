@@ -1,0 +1,150 @@
+body {
+    font-family: 'Calibri', sans-serif;
+    background: url('blackjack.jpg') repeat;
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background: rgba(53, 52, 52, 0.317);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    height: 600px;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+    justify-content: center;
+    margin-top: 60px;
+    border-radius: 40px;
+    border-color: rgba(218, 165, 32, 0.272);
+    border-style: double;
+    border-width: 10px;
+}
+.header img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1 img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: -20px;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 30px;
+}
+
+#cards-el {
+    font-size: 30px;
+}
+
+#sum-el {
+    font-size: 30px;
+}
+
+button {
+    color: rgba(245, 245, 245, 0.895);
+    font-size: 20px;
+    width: 200px;
+    background: rgba(6, 36, 7, 0.733);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    border-width: 4px;
+    border-color: rgba(218, 165, 32, 0.374);
+    border-style: dotted;
+
+}
+button:hover {
+    background-color: #0214036d;
+    transform: scale(0.97);
+    color: rgba(218, 165, 32, 0.374);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rotate {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -25px;
+    margin-bottom: -30px;
+    margin-left: -20px;
+}
+
+.rotate img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.balloon {
+    position: absolute;
+    bottom: -150px;
+    width: 400px;
+    height: 400px;
+    animation: floatUp 5s linear infinite;
+    z-index: 100;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-120vh);
+    }
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 20px;
+    border: 2px solid rgba(218, 165, 32, 0.272);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    border-radius: 40px;
+    border-style: double;
+    border-width: 10px;
+}
+
+.popup button {
+    margin: 10px;
+}
+.logo {
+    width: 120px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.card {
+    width: 80px;
+    height: 110px; 
+    margin: 5px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
